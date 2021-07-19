@@ -5,6 +5,7 @@ export class WhoWatch extends React.Component {
   componentDidMount() {
     whoWatchService.getUsers();
   }
+
   render() {
     return (
       <section className={"who-watch"} onClick={this.handleToggle}>
