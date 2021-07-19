@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  user-select: none;
+  background-color: rgb(44, 121, 134);
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    .who-watch {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .users-container {
+        .user {
+          cursor: pointer;
+          width: 14%;
+          margin: 1rem;
+
+          &:hover {
+            opacity: 70%;
+          }
+        }
+      }
+    }
+  }
+}
