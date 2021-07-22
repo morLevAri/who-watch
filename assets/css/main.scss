@@ -10,8 +10,7 @@
 
 body {
   user-select: none;
-  background-color: rgb(255, 255, 255);
-  // background-color: rgb(44, 121, 134);
+  background-color: rgb(44, 121, 134);
 
   .home {
     display: flex;
@@ -20,19 +19,21 @@ body {
     padding: 10px;
 
     .who-watch {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       .users-container {
         .user {
-          cursor: pointer;
+          flex-direction: column;
           width: 14%;
-          margin: 1rem;
-
-          &:hover {
-            opacity: 70%;
+          .user-name {
+            text-transform: capitalize;
           }
+          img {
+            width: 100%;
+            &:hover {
+              opacity: 70%;
+            }
+          }
+          cursor: pointer;
+          margin: 1rem;
         }
       }
     }

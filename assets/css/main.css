@@ -20,7 +20,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: white;
+  background-color: #2c7986;
 }
 
 body .home {
@@ -37,29 +37,25 @@ body .home {
   padding: 10px;
 }
 
-body .home .who-watch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body .home .who-watch .users-container .user {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .home .who-watch .users-container .user {
-  cursor: pointer;
   width: 14%;
+  cursor: pointer;
   margin: 1rem;
 }
 
-body .home .who-watch .users-container .user:hover {
+body .home .who-watch .users-container .user .user-name {
+  text-transform: capitalize;
+}
+
+body .home .who-watch .users-container .user img {
+  width: 100%;
+}
+
+body .home .who-watch .users-container .user img:hover {
   opacity: 70%;
 }
 /*# sourceMappingURL=main.css.map */

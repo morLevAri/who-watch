@@ -5,33 +5,33 @@ export const whoWatchService = {
 
 let gUsers = [
     {
-        userName: 'Isabella',
+        userName: 'isabella',
         tvShows: ['Killing Eve', 'Bridgerton'],
         image: '1.png'
     },
     {
-        userName: 'Jacob',
+        userName: 'jacob',
         tvShows: ['The Bodyguard', 'Luther'],
         image: '2.png'
     },
     {
-        userName: 'Emily',
+        userName: 'emily',
         tvShows: ['The Crown', 'Bridgerton'],
         image: '3.png'
     },
     {
-        userName: 'Ethan',
+        userName: 'ethan',
         tvShows: ['Outlandern', 'Black Mirror'],
         image: '4.png'
     },
     {
-        userName: 'Mia',
+        userName: 'mia',
         tvShows: ['The Bodyguard', 'Bridgerton'],
         image: '5.png'
     },
 ];
 
 function getUsers() {
-    console.log(gUsers);
+    // console.log(gUsers);
     return gUsers;
 }
