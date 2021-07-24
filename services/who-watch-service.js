@@ -1,7 +1,10 @@
 
 export const whoWatchService = {
     getUsers,
+    // toggleModal,
 }
+
+// let isModal = false
 
 let gUsers = [
     {
@@ -32,6 +35,9 @@ let gUsers = [
 ];
 
 function getUsers() {
-    // console.log(gUsers);
     return gUsers;
 }
+
+// function toggleModal() {
+//     isModal = !isModal
+// };
