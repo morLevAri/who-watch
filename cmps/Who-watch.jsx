@@ -48,7 +48,7 @@ export class WhoWatch extends React.Component {
     return this.state.users.map((user, idx) => {
       return (
         <section
-          className="user flex"
+          className="user user-child flex"
           key={idx}
           onClick={() => {
             this.onSelectedUser(idx);
@@ -91,13 +91,18 @@ export class WhoWatch extends React.Component {
         <h2>Who's watching?</h2>
         <div className="users-container flex">
           <this.Users />
-          <button
-            onClick={() => {
-              this.onAddUser();
-            }}
-          >
-            Add User
-          </button>
+          <div className="user-child">
+            <div className="add-user-container  flex">
+              <button
+                className="add-user-btn"
+                onClick={() => {
+                  this.onAddUser();
+                }}
+              >
+                <i className="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
         </div>
         {this.state.isModal && <this.Modal />}
       </section>

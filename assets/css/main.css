@@ -10,17 +10,13 @@
           align-items: center;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: #2c7986;
+  user-select: none;
 }
 
 body .home {
@@ -37,14 +33,23 @@ body .home {
   padding: 10px;
 }
 
+body .home .main-container .who-watch .users-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .home .main-container .who-watch .users-container .user-child {
+  padding: 0.5rem;
+}
+
 body .home .main-container .who-watch .users-container .user {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 14%;
-  cursor: pointer;
-  margin: 1rem;
 }
 
 body .home .main-container .who-watch .users-container .user .user-name {
@@ -52,14 +57,42 @@ body .home .main-container .who-watch .users-container .user .user-name {
 }
 
 body .home .main-container .who-watch .users-container .user img {
-  width: 100%;
-  padding: 8px;
-  border: 2px dashed #fbb13b81;
+  height: 10rem;
+  width: 10rem;
+  border: 2px dashed #fbb13b7a;
+  padding: 0.5rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 body .home .main-container .who-watch .users-container .user img:hover {
-  border: 4px dashed #ffc400;
+  border: 2px dashed #fbb03b;
+}
+
+body .home .main-container .who-watch .users-container .add-user-container {
+  border: 2px dashed #fbb13b7a;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+body .home .main-container .who-watch .users-container .add-user-container .add-user-btn {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  border: none;
+  background-color: #fce3c3;
+  outline: none;
+}
+
+body .home .main-container .who-watch .users-container .add-user-container .add-user-btn i {
+  color: #fbb03b;
+  font-size: 5rem;
+}
+
+body .home .main-container .who-watch .users-container .add-user-container:hover {
+  border: 2px dashed #fbb03b;
 }
 
 body .home .main-container .who-watch .modal-container .modal {
