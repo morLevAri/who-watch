@@ -1,12 +1,14 @@
 
 export const whoWatchService = {
     getUsers,
-    // toggleModal,
+    toggleModal,
+    removeUser,
+    // addUser,
 }
 
-// let isModal = false
+let isModal = false
 
-let gUsers = [
+const gUsers = [
     {
         userName: 'isabella',
         tvShows: ['Killing Eve', 'Bridgerton'],
@@ -38,6 +40,12 @@ function getUsers() {
     return gUsers;
 }
 
-// function toggleModal() {
-//     isModal = !isModal
-// };
+
+function toggleModal() {
+    isModal = !isModal
+    return isModal
+};
+
+function removeUser(idx) {
+    gUsers.splice(idx, 1)
+};

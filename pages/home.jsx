@@ -4,7 +4,9 @@ export class Home extends React.Component {
   render() {
     return (
       <section className="home">
-        <WhoWatch />
+        <div className="main-container">
+          <WhoWatch />
+        </div>
       </section>
     );
   }
