@@ -28,8 +28,12 @@ body {
             }
             img {
               width: 100%;
+              padding: 8px;
+              border: 2px dashed #fbb13b81;
+              border-radius: 50%;
               &:hover {
-                opacity: 70%;
+                border: 4px dashed #ffc400;
+                // opacity: 70%;
               }
             }
             cursor: pointer;
@@ -45,8 +49,8 @@ body {
             height: 200px;
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
-            margin: 0 auto;
             padding: 10px;
+            margin: 0 auto;
             .close-modal-btn {
               font-size: 25px;
               cursor: pointer;

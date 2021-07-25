@@ -53,10 +53,13 @@ body .home .main-container .who-watch .users-container .user .user-name {
 
 body .home .main-container .who-watch .users-container .user img {
   width: 100%;
+  padding: 8px;
+  border: 2px dashed #fbb13b81;
+  border-radius: 50%;
 }
 
 body .home .main-container .who-watch .users-container .user img:hover {
-  opacity: 70%;
+  border: 4px dashed #ffc400;
 }
 
 body .home .main-container .who-watch .modal-container .modal {
@@ -64,8 +67,8 @@ body .home .main-container .who-watch .modal-container .modal {
   height: 200px;
   background-color: white;
   border-radius: 10px;
-  margin: 0 auto;
   padding: 10px;
+  margin: 0 auto;
 }
 
 body .home .main-container .who-watch .modal-container .modal .close-modal-btn {

@@ -21,6 +21,17 @@ export class WhoWatch extends React.Component {
     });
   };
 
+  onAddUser = () => {
+    const userName = prompt("Enter user name");
+    let tvShows = prompt("Enter favorite tv shoes");
+    if (!userName || !tvShows) return;
+    tvShows = tvShows.split(",");
+    whoWatchService.addUser(userName, tvShows);
+    this.setState({
+      users: whoWatchService.getUsers(),
+    });
+  };
+
   TvShows = () => {
     return this.state.users[this.state.selectedUser].tvShows.map(
       (show, idx) => {
@@ -64,13 +75,6 @@ export class WhoWatch extends React.Component {
           <this.TvShows />
           <button
             onClick={() => {
-              this.onSelectedUser(null);
-            }}
-          >
-            Close Modal
-          </button>
-          <button
-            onClick={() => {
               this.onRemoveUser();
             }}
           >
@@ -87,6 +91,13 @@ export class WhoWatch extends React.Component {
         <h2>Who's watching?</h2>
         <div className="users-container flex">
           <this.Users />
+          <button
+            onClick={() => {
+              this.onAddUser();
+            }}
+          >
+            Add User
+          </button>
         </div>
         {this.state.isModal && <this.Modal />}
       </section>

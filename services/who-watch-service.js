@@ -3,12 +3,12 @@ export const whoWatchService = {
     getUsers,
     toggleModal,
     removeUser,
-    // addUser,
+    addUser,
 }
 
 let isModal = false
 
-const gUsers = [
+let gUsers = [
     {
         userName: 'isabella',
         tvShows: ['Killing Eve', 'Bridgerton'],
@@ -36,6 +36,15 @@ const gUsers = [
     },
 ];
 
+function addUser(userName, tvShows) {
+    const newUser = {
+        userName,
+        tvShows,
+        image: `${_getRandomInt(1, 10)}.png`,
+    }
+    gUsers.push(newUser);
+}
+
 function getUsers() {
     return gUsers;
 }
@@ -49,3 +58,9 @@ function toggleModal() {
 function removeUser(idx) {
     gUsers.splice(idx, 1)
 };
+
+function _getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
