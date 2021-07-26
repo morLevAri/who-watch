@@ -36,9 +36,9 @@ export class WhoWatch extends React.Component {
     return this.state.users[this.state.selectedUser].tvShows.map(
       (show, idx) => {
         return (
-          <section key={idx} className="show-list-container">
-            <li className="show-list">{show}</li>
-          </section>
+          <ul key={idx} className="show-list">
+            <li>{show}</li>
+          </ul>
         );
       }
     );
@@ -71,9 +71,14 @@ export class WhoWatch extends React.Component {
             }}
             className="far fa-window-close close-modal-btn"
           ></i>
-          <h1>TV Shows:</h1>
-          <this.TvShows />
+          <h2 className="modal-title">TV Shows:</h2>
+
+          <section className="show-list-container">
+            <this.TvShows />
+          </section>
+
           <button
+            className="delete-user-btn flex"
             onClick={() => {
               this.onRemoveUser();
             }}
@@ -88,7 +93,7 @@ export class WhoWatch extends React.Component {
   render() {
     return (
       <section className="who-watch">
-        <h2>Who's watching?</h2>
+        <h2 className="who-watch-title">Who's watching?</h2>
         <div className="users-container flex">
           <this.Users />
           <div className="user-child">

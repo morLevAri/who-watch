@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,6 +18,7 @@ body {
           user-select: none;
   background-color: #2c7986;
   user-select: none;
+  padding: 20px;
 }
 
 body .home {
@@ -30,7 +32,14 @@ body .home {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+}
+
+body .home .main-container .who-watch {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body .home .main-container .who-watch .who-watch-title {
+  font-weight: 500;
 }
 
 body .home .main-container .who-watch .users-container {
@@ -53,6 +62,7 @@ body .home .main-container .who-watch .users-container .user {
 }
 
 body .home .main-container .who-watch .users-container .user .user-name {
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -95,17 +105,59 @@ body .home .main-container .who-watch .users-container .add-user-container:hover
   border: 2px dashed #fbb03b;
 }
 
+body .home .main-container .who-watch .modal-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 100;
+}
+
 body .home .main-container .who-watch .modal-container .modal {
-  width: 200px;
-  height: 200px;
+  font-weight: 300;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+  width: 20em;
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
-  margin: 0 auto;
+  padding: 20px;
 }
 
 body .home .main-container .who-watch .modal-container .modal .close-modal-btn {
   font-size: 25px;
   cursor: pointer;
+}
+
+body .home .main-container .who-watch .modal-container .modal .modal-title {
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+body .home .main-container .who-watch .modal-container .modal .show-list-container {
+  margin-bottom: 30px;
+}
+
+body .home .main-container .who-watch .modal-container .modal .show-list-container .show-list {
+  font-weight: 300;
+}
+
+body .home .main-container .who-watch .modal-container .modal .delete-user-btn {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 3rem auto;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 10rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ac1b35;
+  color: #ffbf57;
+  outline: none;
+}
+
+body .home .main-container .who-watch .modal-container .modal .delete-user-btn:hover {
+  background-color: #da2d4d;
 }
 /*# sourceMappingURL=main.css.map */

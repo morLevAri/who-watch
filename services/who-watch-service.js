@@ -10,12 +10,12 @@ let isModal = false
 
 let gUsers = [
     {
-        userName: 'isabella',
+        userName: 'jacob',
         tvShows: ['Killing Eve', 'Bridgerton'],
         image: '1.png'
     },
     {
-        userName: 'jacob',
+        userName: 'isabella',
         tvShows: ['The Bodyguard', 'Luther'],
         image: '2.png'
     },
