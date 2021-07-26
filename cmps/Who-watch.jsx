@@ -99,6 +99,7 @@ export class WhoWatch extends React.Component {
           <div className="user-child">
             <div className="add-user-container  flex">
               <button
+                title="add user"
                 className="add-user-btn"
                 onClick={() => {
                   this.onAddUser();
